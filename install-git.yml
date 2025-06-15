@@ -1,0 +1,7 @@
+- name: Install Git
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Git using apt
+      shell: sudo apt install git
